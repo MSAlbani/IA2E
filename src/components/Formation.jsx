@@ -17,7 +17,7 @@ export default function Formation() {
         },
         {
             icon: Globe,
-            title: "Gestion Environnementale",
+            title: "Environnement",
             description: "Devenez acteur du changement avec notre programme de protection de l'environnement.",
             duration: "3 ans"
         },
