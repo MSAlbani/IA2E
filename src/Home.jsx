@@ -6,6 +6,7 @@ import { useState } from "react";
 import StatsBar from "./components/StatsBar.jsx";
 import Apropos from "./components/Apropos.jsx";
 import Formation from "./components/Formation.jsx";
+import logo from '../public/logo.png'
 
 
 const lesLiens = [
@@ -35,7 +36,7 @@ export default function Home() {
                         {/* La partie du logo ************************************************************************** */}
                         <div className="flex flex-row gap-3 items-center">
                             <div className="w-12 h-12 rounded flex justify-center items-center">
-                                <img src="../public/logo.png" alt="Logo" className="relative" />
+                                <img src={logo} alt="Logo" className="relative" />
                             </div>
                             <div>
                                 <h1 className="text-xl font-bold text-[#2D5A27] tracking-tight">IA2E</h1>
