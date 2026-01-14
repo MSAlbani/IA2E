@@ -4,7 +4,7 @@ import Footer from './components/Footer.jsx'
 import Contact from './components/Contact.jsx'
 import { useState } from "react";
 import StatsBar from "./components/StatsBar.jsx";
-import Apropos from "./components/apropos.jsx";
+import Apropos from "./components/Apropos.jsx";
 import Formation from "./components/Formation.jsx";
 
 
