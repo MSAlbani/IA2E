@@ -6,7 +6,7 @@ import { useState } from "react";
 import StatsBar from "./components/StatsBar.jsx";
 import Apropos from "./components/Apropos.jsx";
 import Formation from "./components/Formation.jsx";
-import logo from '../public/logo.png'
+import logo from './assets/logo.png'
 
 
 const lesLiens = [
