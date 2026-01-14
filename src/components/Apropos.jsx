@@ -1,5 +1,10 @@
 import { motion } from "motion/react"
 import { GraduationCap, Leaf, Users } from "lucide-react"
+import classe from "../assets/classe.jpg"
+import sortie from "../assets/sortie.jpg"
+import plantation from "../assets/plantation.jpg"
+import elevage from "../assets/elevage.jpg"
+
 export default function Apropos() {
     return (
         <section className="py-24 bg-white">
@@ -56,25 +61,25 @@ export default function Apropos() {
                         <div className="grid grid-cols-2 gap-4">
                             <motion.img
                                 whileHover={{ scale: 1.02 }}
-                                src="../public/sortie.jpg"
+                                src={sortie}
                                 alt="Étudiants en formation"
                                 className="rounded-2xl shadow-lg w-full h-48 object-cover"
                             />
                             <motion.img
                                 whileHover={{ scale: 1.02 }}
-                                src="../public/classe.jpg"
+                                src={classe}
                                 alt="Campus nature"
                                 className="rounded-2xl shadow-lg w-full h-48 object-cover mt-8"
                             />
                             <motion.img
                                 whileHover={{ scale: 1.02 }}
-                                src="../public/plantation.jpg"
+                                src={plantation}
                                 alt="Travaux pratiques"
                                 className="rounded-2xl shadow-lg w-full h-48 object-cover"
                             />
                             <motion.img
                                 whileHover={{ scale: 1.02 }}
-                                src="../public/elevage.jpg"
+                                src={elevage}
                                 alt="Élevage"
                                 className="rounded-2xl shadow-lg w-full h-48 object-cover mt-8"
                             />

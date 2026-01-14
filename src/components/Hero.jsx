@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sprout, ArrowRight, GraduationCap, ChevronDown } from 'lucide-react';
 import { motion } from 'motion/react';
+import photoHero from "../assets/photoHero.jpg"
 export default function Hero() {
     return (
         <section id="accueil" className='min-h-screen relative flex items-center pt-20'>
@@ -41,7 +42,7 @@ export default function Hero() {
                         <div className='relative aspect-square max-x-lg mx-auto '>
                             <div className="absolute inset-4 bg-linear-to-br from-[#2D5A27] to-[#4A7C43] rounded-[3rem] rotate-6" />
                             <img
-                                src="../public/photoHero.jpg"
+                                src={photoHero}
                                 alt="Campus IA2E"
                                 className="relative w-full h-full object-cover rounded-[3rem] shadow-2xl"
                             />
