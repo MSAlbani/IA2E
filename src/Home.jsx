@@ -7,6 +7,7 @@ import StatsBar from "./components/StatsBar.jsx";
 import Apropos from "./components/Apropos.jsx";
 import Formation from "./components/Formation.jsx";
 import logo from './assets/logo.png'
+import Campus from "./components/Campus.jsx";
 
 
 const lesLiens = [
@@ -68,6 +69,7 @@ export default function Home() {
             <StatsBar />
             <Apropos />
             <Formation />
+            <Campus />
             <Contact />
             <Footer />
         </div >

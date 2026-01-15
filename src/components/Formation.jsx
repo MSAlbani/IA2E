@@ -5,7 +5,7 @@ export default function Formation() {
     const formations = [
         {
             icon: Sprout,
-            title: "Agriculture Durable",
+            title: "Agriculture",
             description: "Formation complète aux techniques agricoles modernes et respectueuses de l'environnement.",
             duration: "3 ans"
         },
@@ -23,7 +23,19 @@ export default function Formation() {
         },
         {
             icon: TreePine,
-            title: "Agroforesterie",
+            title: "Eaux et forêt",
+            description: "Combinez agriculture et foresterie pour des systèmes productifs et durables.",
+            duration: "2 ans"
+        },
+        {
+            icon: TreePine,
+            title: "Hydrolique",
+            description: "Combinez agriculture et foresterie pour des systèmes productifs et durables.",
+            duration: "3 ans"
+        },
+        {
+            icon: TreePine,
+            title: "Génie rural",
             description: "Combinez agriculture et foresterie pour des systèmes productifs et durables.",
             duration: "2 ans"
         }
