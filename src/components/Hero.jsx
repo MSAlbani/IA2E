@@ -11,14 +11,18 @@ export default function Hero() {
             </div>
             <div className='max-w-7xl mx-auto px-6 py-20 z-10 relative'>
                 <div className='grid lg:grid-cols-2 gap-12 items-center'>
-                    <div>
+                    <motion.div
+                        initial={{ opacity: 0, x: -50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8 }}
+                    >
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#2D5A27]/10 rounded-full mb-6">
                             <Sprout className="w-4 h-4 text-[#2D5A27]" />
                             <span className="text-sm font-medium text-[#2D5A27]">Cultivons l'avenir ensemble</span>
                         </div>
 
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-[#2D5A27] leading-tight mb-6">
-                            École d'Agriculture,
+                            Institut d'Agriculture,
                             <span className="block text-[#4A7C43]">d'Élevage &</span>
                             <span className="block text-[#8B7355]">d'Environnement</span>
                         </h1>
@@ -37,8 +41,12 @@ export default function Hero() {
                                 Nous contacter
                             </button>
                         </div>
-                    </div>
-                    <div className='relative'>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                        className='relative'>
                         <div className='relative aspect-square max-x-lg mx-auto '>
                             <div className="absolute inset-4 bg-linear-to-br from-[#2D5A27] to-[#4A7C43] rounded-[3rem] rotate-6" />
                             <img
@@ -47,7 +55,12 @@ export default function Hero() {
                                 className="relative w-full h-full object-cover rounded-[3rem] shadow-2xl"
                             />
                         </div>
-                        <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.6 }}
+                            className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl"
+                        >
                             <div className="flex items-center gap-4">
                                 <div className="w-14 h-14 bg-[#4A7C43]/20 rounded-full flex items-center justify-center">
                                     <GraduationCap className="w-7 h-7 text-[#2D5A27]" />
@@ -57,8 +70,8 @@ export default function Hero() {
                                     <p className='text-sm  text-[#8B7355]'>Années d'excellence</p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
                 </div>
                 {/* Scroll Indicator */}
                 <motion.div
@@ -78,6 +91,6 @@ export default function Hero() {
                     </motion.div>
                 </motion.div>
             </div>
-        </section>
+        </section >
     )
 }

@@ -7,7 +7,7 @@ import elevage from "../assets/elevage.jpg"
 
 export default function Apropos() {
     return (
-        <section className="py-24 bg-white">
+        <section id="apropos" className="py-24 bg-white">
             <div className="max-w-7xl mx-auto px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
