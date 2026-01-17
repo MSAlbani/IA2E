@@ -3,6 +3,14 @@ import { Sprout, ArrowRight, GraduationCap, ChevronDown } from 'lucide-react';
 import { motion } from 'motion/react';
 import photoHero from "../assets/photoHero.jpg"
 export default function Hero() {
+
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id)
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" })
+        }
+        // setMobileMenuOpen(false)
+    }
     return (
         <section id="accueil" className='min-h-screen relative flex items-center pt-20'>
             <div className="absolute inset-0 overflow-hidden">
@@ -32,11 +40,11 @@ export default function Hero() {
                             L'IA2E vous accompagne vers une carrière épanouissante au service de la nature.
                         </p>
                         <div className='flex flex-col sm:flex-row gap-4'>
-                            <button className="bg-[#2D5A27] cursor-pointer inline-flex justify-center items-center gap-2 whitespace-nowrap h-9 hover:bg-[#1E3D1B] text-white px-8 py-6 rounded-full text-lg font-medium group">
+                            <button onClick={() => { scrollToSection("formation") }} className="bg-[#2D5A27] cursor-pointer inline-flex justify-center items-center gap-2 whitespace-nowrap h-9 hover:bg-[#1E3D1B] text-white px-8 py-6 rounded-full text-lg font-medium group">
                                 Découvrir nos formations
                                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </button>
-                            <button className="border-2 cursor-pointer border-[#2D5A27] text-[#2D5A27] hover:bg-[#2D5A27] h-9 inline-flex justify-center items-center gap-2 whitespace-nowrap hover:text-white px-8 py-6 rounded-full text-lg font-medium"
+                            <button onClick={() => { scrollToSection("contact") }} className="border-2 cursor-pointer border-[#2D5A27] text-[#2D5A27] hover:bg-[#2D5A27] h-9 inline-flex justify-center items-center gap-2 whitespace-nowrap hover:text-white px-8 py-6 rounded-full text-lg font-medium"
                             >
                                 Nous contacter
                             </button>
